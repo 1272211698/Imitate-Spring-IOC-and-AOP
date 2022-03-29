@@ -1,0 +1,22 @@
+<beans>
+    <!-- 添加component-scan支持，可以扫描某个包下所有类的@Component注解-->
+    <component-scan base-package="MySpring.pojo"/>
+
+    <bean id="user" class="MySpring.pojo.User">
+        <property name="scores">
+            <array>
+                <value>98</value>
+                <value>66</value>
+                <value>0</value>
+            </array>
+        </property>
+        <property name="subjects">
+            <array>
+                <value>数学</value>
+                <value>英语</value>
+                <value>语文</value>
+            </array>
+        </property>
+    </bean>
+
+</beans>
